@@ -32,4 +32,4 @@ Docker options are described in details https://docs.docker.com/engine/reference
 == Contributing
 
 Do not hesitate to https://github.com/madhead/imagemagick/issues/new[open an issue] in case you notice any bugs or missing conversion tools or features.
-Read the CONTRIBUTING.md[contributing guide] if you know how to hack and make the image better.
+Read the link:.github/CONTRIBUTING.adoc[contributing guide] if you know how to hack and make the image better.

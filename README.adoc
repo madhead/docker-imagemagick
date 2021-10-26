@@ -1,4 +1,35 @@
-= Docker image template
+= madhead/imagemagick
 
-Template repository for Docker images.
-Batteries included!
+Simple https://docker.com[Docker] image for hustle-free image conversions with https://imagemagick.org[ImageMagick].
+
+== Usage
+
+First, pull the image:
+
+[source, bash]
+----
+docker pull madhead/imagemagick:latest
+----
+
+Then, do the simple conversions like:
+
+[source, bash]
+----
+docker run --rm -it -v $(pwd):/src -v $(pwd):/out --user=$(id -u):$(id -g) madhead/imagemagick convert /src/image.svg /out/image.png
+----
+
+or more sophisticated ones:
+
+[source, bash]
+----
+docker run --rm -it -v $(pwd):/src -v $(pwd):/out --user=$(id -u):$(id -g) madhead/imagemagick convert -density 300 /src/document.pdf -background white -alpha remove -quality 90 /out/document.png
+----
+
+Read about the available flags, options and switches in the official https://imagemagick.org/script/convert.php[ImageMagick documentation].
+http://manpages.ubuntu.com/manpages/precise/en/man1/convert.1.html[Ubuntu's manpage] is great as well.
+Docker options are described in details https://docs.docker.com/engine/reference/run[on their site].
+
+== Contributing
+
+Do not hesitate to https://github.com/madhead/imagemagick/issues/new[open an issue] in case you notice any bugs or missing conversion tools or features.
+Read the CONTRIBUTING.md[contributing guide] if you know how to hack and make the image better.

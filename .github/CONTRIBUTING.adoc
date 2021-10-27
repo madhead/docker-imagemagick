@@ -3,7 +3,7 @@
 I love pull requests from everyone.
 Contributing is easy:
 
- - You can report bugs and request features using the https://github.com/madhead/docker-image/issues[issues page].
+ - You can report bugs and request features using the https://github.com/madhead/docker-imagemagick/issues[issues page].
  - You can easily work on the code if you have a GitHub account (https://github.com/join[get one]).
 
 Fork the project, then clone the repo:
@@ -14,7 +14,7 @@ git clone git@github.com:<your-github-account>/imagemagick.git
 ----
 
 Make your changes.
-Push to your fork and https://github.com/madhead/imagemagick/compare[submit a pull request].
+Push to your fork and https://github.com/madhead/docker-imagemagick/compare[submit a pull request].
 
 At this point you're waiting on me.
 I'll try to check the PR as soon as possible, but it may take weeks.
